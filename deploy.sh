@@ -16,4 +16,4 @@ docker rm $INSTANCE_NAME || true
 docker image rm $IMAGE_NAME || true
 
 docker build --tag $IMAGE_NAME .
-docker run -it --name $INSTANCE_NAME -p $PORT:80 $IMAGE_NAME
+docker run -itd --name $INSTANCE_NAME -p $PORT:80 $IMAGE_NAME
