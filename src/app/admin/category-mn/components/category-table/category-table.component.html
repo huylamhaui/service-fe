@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of tableData; let i = index">
+            <td> {{i + 1}} </td>
+            <td> {{row.id}} </td>
+            <td> {{row.name}} </td>
+            <td> {{row.description}} </td>
+        </tr>
+    </tbody>
+</table>
